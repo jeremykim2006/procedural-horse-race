@@ -9,7 +9,6 @@ int position(int pos, char horse)
 {
 cout << horse << ": ";
 pos = pos + rand() % 2 + 1; 
-between 1 and 2
 for(int b=0;b<=pos;b++)
 cout << " ";
 cout << "~n-n^";
@@ -22,8 +21,7 @@ int main()
 int posA=0, posB=0, posC=0, posD=0;
 char horse,horsename,bethorse;
 double betcash=0;
-cout<<"Who do you think is going to win?\nPlace your Bet and find out!\n> 
-$";
+cout<<"Who do you think is going to win?\nPlace your Bet and find out!\n> $";
 cin>>betcash;
 cout<<"On what horse? A, B, C, or D?\n> ";
 cin>>bethorse;
@@ -74,11 +72,10 @@ horsename='D';
 break;
 }
 cout<<"Winning Horse: Horse "<<horsename<<endl;
-if(horsename==bethorse){cout<<"You Won! You Get triple times the money you 
-paid."<<endl;}
-else cout<<"You Lost! Now your $"<<betcash<<" that you just bet is now 
-mine!"<<endl;
+if(horsename==bethorse){cout<<"You Won! You Get triple times the money you paid."<<endl;}
+else cout<<"You Lost!"<<endl;
 
 system("pause");
 return 0;
 }
+
